@@ -1,0 +1,18 @@
+public class SubArray {
+    public static void subarray(int num[]){
+        for(int i=0;i<num.length;i++){
+            for(int j=i;j<num.length;j++){
+                for(int k=i;k<=j;k++){
+                    System.out.print(num[k]+",");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[]){
+        int num[]={23,32,35,56,43,12};
+        subarray(num);
+    }
+}
